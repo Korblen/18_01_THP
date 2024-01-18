@@ -103,10 +103,10 @@ end
 def check_capitale(e)
     kontheur = 0
     for element in e
-    if capitale(element) == true 
-        kontheur = kontheur + 1
-        puts element
-    end
+        if capitale(element) == true 
+            kontheur = kontheur + 1
+            puts element
+        end
     end
     return kontheur
 end

@@ -36,6 +36,11 @@ def sortir_valeur_inverse(e, num)
 
 end
 
+def liste_simille(e)
+     p = e.select { |handle| handle[1].to_i <= 6000.0 }
+     return p 
+end
+
 def menu (e)
      system ('clear')
      puts "bienvenue dans mon menu ! "
@@ -73,11 +78,11 @@ def menu (e)
                sortir_valeur_inverse(e, nombre)
           end
      elsif choix == 4
-          puts "fonction pas encore implémentée"
-          exit
+          f = liste_simille(e)
+          puts f 
      elsif choix == 5
-          puts "fonction pas encore implémentée"
-          exit
+          f = liste_simille(e)
+          sortir_valeur(f, 1)
      else 
           puts "non mais c'est SI DIFFICILE que ça de sortir une valeur correcte ??"
           exit
