@@ -43,7 +43,7 @@ def menu(menusse, e)
         array_de_merde = tri_nbr(e)
         puts array_de_merde
     elsif option == 8
-        position = position_handle(e, "@epenser")
+        position = position_handle(e, "@epenser") + 1
         if position
             puts "Position de '@epenser': #{position}"
         else
