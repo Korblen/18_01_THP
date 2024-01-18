@@ -20,7 +20,8 @@ def menu(menusse, e)
     print ">"
     option = gets.chomp.to_i
     if option.is_a?(Integer) == false 
-        menu agressif
+        puts "après, t'as les valeurs des choix écrites espèce de kassos"
+        exit
     elsif option == 1
         puts e
     elsif option == 2
@@ -52,6 +53,8 @@ def menu(menusse, e)
         groupes = tri_et_groupe_par_longueur(e)
         groupes.each { |k, v| puts "Longueur #{k}: #{v}" }
     else
+        puts "après, t'as les valeurs des choix écrites espèce de kassos"
+        exit
     end
 end
 
@@ -102,6 +105,7 @@ def check_capitale(e)
     for element in e
     if capitale(element) == true 
         kontheur = kontheur + 1
+        puts element
     end
     end
     return kontheur
